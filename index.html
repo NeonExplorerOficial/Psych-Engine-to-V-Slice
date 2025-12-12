@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psych Engine to V-Slice Converter</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Psych Engine to V-Slice Converter</h1>
+        <p class="subtitle">Convierte archivos JSON de personajes de Psych Engine a formato V-Slice (con soporte Multi-Sparrow)</p>
+
+        <div class="upload-section">
+            <label for="file-input" class="file-label">
+                <span class="file-icon">📁</span>
+                <span class="file-text">Seleccionar JSON del personaje</span>
+            </label>
+            <input type="file" id="file-input" accept=".json">
+            <p id="file-name" class="file-name"></p>
+        </div>
+
+        <div id="multisparrow-section" class="multisparrow-section hidden">
+            <p class="info-text">Se detectaron multiples spritesheets. Sube los archivos XML para mapear las animaciones:</p>
+            <div id="xml-uploads"></div>
+        </div>
+
+        <div class="name-section">
+            <label for="char-name">Nombre del personaje:</label>
+            <input type="text" id="char-name" placeholder="Ej: boyfriend">
+        </div>
+
+        <div class="options-section">
+            <label class="checkbox-label">
+                <input type="checkbox" id="use-base-offsets" checked>
+                <span>Calcular offsets relativos (recomendado)</span>
+            </label>
+        </div>
+
+        <button id="convert-btn" class="convert-btn" disabled>Convertir</button>
+
+        <div id="result-section" class="result-section hidden">
+            <h2>Resultado</h2>
+            <div class="button-group">
+                <button id="copy-btn" class="action-btn">Copiar</button>
+                <button id="download-btn" class="action-btn">Descargar</button>
+            </div>
+            <textarea id="result" readonly></textarea>
+            <p id="copy-message" class="copy-message hidden">Copiado al portapapeles</p>
+        </div>
+
+        <div id="error-section" class="error-section hidden">
+            <p id="error-message"></p>
+        </div>
+    </div>
+
+    <script src="converter.js"></script>
+</body>
+</html>
