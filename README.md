@@ -1,4 +1,4 @@
-# <a href="https://emoji.gg/emoji/57943-bf-rap"><img src="https://cdn3.emoji.gg/emojis/57943-bf-rap.png" width="64px" height="64px" alt="BF_RAP"></a> Convertidor de Personaje de Psych Engine a V-Slice 
+# <a href="https://emoji.gg/emoji/57943-bf-rap"><img src="https://cdn3.emoji.gg/emojis/57943-bf-rap.png" width="44px" height="44px" alt="BF_RAP"></a> Convertidor de Personaje de Psych Engine a V-Slice 
 
 Convierten archivos JSON de personajes de FNF: Psych Engine a V-Slice
 
@@ -10,8 +10,6 @@ Solo sube el archivo  .json de tu personaje de Psych Engine, asignale un nombre,
 
 > Psych Engine a V-Slice
 
-# Notes
+# Créditos:
 
-For Psych Engine to V-Slice conversion, there is currently no support for multi-sparrow Psych characters.
-
-V-Slice to Psych does support multi-sparrow V-Slice characters.
+- Este proyecto fue creado por la IA de Repl.it, en base a [esta herramienta](https://github.com/Zyflx/Psych-Character-To-VSlice) creada por [@Zyflx](https://github.com/Zyflx)con el propósito de hacerlo una página web.
