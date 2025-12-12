@@ -1,19 +1,14 @@
-# Psych Character To V-Slice Converter
+# <a href="https://emoji.gg/emoji/57943-bf-rap"><img src="https://cdn3.emoji.gg/emojis/57943-bf-rap.png" width="64px" height="64px" alt="BF_RAP"></a> Convertidor de Personaje de Psych Engine a V-Slice 
 
-Converts Psych Engine character JSON's to V-Slice compatible character JSON's and vice versa.
+Convierten archivos JSON de personajes de FNF: Psych Engine a V-Slice
 
-# Usage
+# ¿Como Usar? 🤔
 
-Just run the exe and thats it lol.
+Solo sube el archivo  .json de tu personaje de Psych Engine, asignale un nombre, y presiona descargar :b
 
-# Building 
+# Modo de Conversión
 
-Do `haxe build.hxml` in the command line.
-The output executable is located in "output/bin".
-
-# Conversion Modes
-
-PSYCH_TO_VSLICE and VSLICE_TO_PSYCH
+> Psych Engine a V-Slice
 
 # Notes
 
