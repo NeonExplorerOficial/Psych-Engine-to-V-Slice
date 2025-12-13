@@ -174,7 +174,9 @@ function convertPsychToVSlice(psych, characterName, useBaseOffsets) {
             isPixel: psych.no_antialiasing ?? false
         },
         offsets: [0, 0],
-        cameraOffsets: psych.camera_position ?? [0, 0],
+        // --- MODIFICACIÓN: Fija el cameraOffsets a [0, 0] para evitar el "sabático" ---
+        cameraOffsets: [0, 0], 
+        // -------------------------------------------------------------------------------
         isPixel: psych.no_antialiasing ?? false,
         danceEvery: 2,
         singTime: psych.sing_duration ?? 8.0,
@@ -196,11 +198,13 @@ function convertPsychToVSlice(psych, characterName, useBaseOffsets) {
 
             let finalOffsets;
             if (useBaseOffsets) {
+                // Si useBaseOffsets es true, normalizamos los offsets restando la posición base del personaje.
                 finalOffsets = [
                     origX - charPosX,
                     origY - charPosY
                 ];
             } else {
+                // Si useBaseOffsets es false, usamos los offsets directos de Psych Engine.
                 finalOffsets = [origX, origY];
             }
 
